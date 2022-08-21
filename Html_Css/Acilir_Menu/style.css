@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 25px;
 }
 .main {
   margin-left: -170px;
@@ -19,17 +20,16 @@
   background-color: goldenrod;
   width: 200px;
   position: relative;
-  padding: 10px;
+  padding: 20px 10px;
 }
-
 .menu p {
   display: inline-block;
 }
 .in-side {
   background-color: rgb(220, 187, 0);
   width: 200px;
-  padding: 15px;
-  line-height: 25px;
+  padding: 30px 10px;
+  line-height: 50px;
 }
 .right {
   float: right;
