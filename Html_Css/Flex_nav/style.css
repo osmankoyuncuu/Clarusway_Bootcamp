@@ -1,10 +1,62 @@
+@import "theme.css";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.4rem;
 }
-
 .container {
   display: flex;
-  /* background-color:gr; */
+  align-items: center;
+  margin-top: 2rem;
+  height: 3rem;
+  box-shadow: var(--koyu-golge);
+  background-image: linear-gradient(to right, var(--gri-7), var(--mavi4));
+  transition: all 1s;
+}
+
+.logo-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+  padding-left: 15px;
+}
+.fa-basket-shopping {
+  color: whitesmoke;
+}
+.nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  gap: 20px 20px;
+}
+.icon {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  gap: 15px;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+.icon a {
+  color: black;
+}
+.nav:hover {
+  background-color: var(--gri-8);
+}
+.nav a:hover {
+  color: whitesmoke;
+}
+.icon a:hover {
+  transform: scale(115%);
 }
