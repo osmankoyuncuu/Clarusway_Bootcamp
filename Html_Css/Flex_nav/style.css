@@ -36,6 +36,7 @@
   background-color: whitesmoke;
   border-radius: 10px;
   gap: 20px 20px;
+  box-shadow: var(--koyu-golge);
 }
 .icon {
   width: 35%;
