@@ -3,11 +3,18 @@
 //! Examples:
 //! reverse("Clarusway Rocks!") ➞ !skcoR yawsuralC
 //! reverse("Happy") ➞ yppaH
+// ****Yöntem-1****
+// let word = prompt(`Entered a word: `);
+// let newWordArray = word.split("").reverse();
+// let newWord = "";
+// for (let i = 0; i < newWordArray.length; i++) {
+//   newWord += newWordArray[i];
+// }
+// console.log(newWord);
+
+// ***Yöntem-2*****
 
 let word = prompt(`Entered a word: `);
 let newWordArray = word.split("").reverse();
-let newWord = "";
-for (let i = 0; i < newWordArray.length; i++) {
-  newWord += newWordArray[i];
-}
+newWord = newWordArray.join("");
 console.log(newWord);
