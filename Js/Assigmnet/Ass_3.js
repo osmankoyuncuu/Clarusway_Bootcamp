@@ -17,7 +17,7 @@ for (let i = 0; i < newTarkan.length; ++i) {
 //! https://www.youtube.com/watch?v=b7vfp5G4brE
 //! https://youtu.be/b7vfp5G4brE
 
-const linkYoutube = `https://www.youtube.com/watch?v=b7vfp5G4brE`;
+const linkYoutube = "https://www.youtube.com/watch?v=b7vfp5G4brE";
 
 const equal = /[=]/;
 const www = /[www]/;
