@@ -6,7 +6,7 @@
 //? Input : 'Clarusway' => Output : 'Clarusway'
 //? Input : 'days. big make things Little' => Output : 'Little things make big days.'
 
-let sentence = prompt(`Entered a sentence: `);
+let sentence = prompt("Entered a sentence: ");
 let newSentenceArray = sentence.split(" ").reverse();
 let newSentence = "";
 for (let i = 0; i < newSentenceArray.length; i++) {
