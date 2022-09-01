@@ -37,8 +37,6 @@ header {
     border: $myBorder;
     border-radius: 10px;
   }
-  nav {
-  }
   li {
     list-style-type: none;
     display: inline;
@@ -78,6 +76,85 @@ header {
       &:hover {
         background-color: pink;
         cursor: pointer;
+      }
+    }
+  }
+}
+//******* CARDS ******
+
+//! @mixin
+@mixin myBox($backColor, $color) {
+  background-color: $backColor;
+  color: $color;
+  width: 25%;
+  height: 15rem;
+  border: $myBorder;
+  border-radius: 5px;
+}
+.cards {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  .card1 {
+    @include myBox(green, white);
+  }
+  .card2 {
+    @include myBox(brown, white);
+  }
+  .card3 {
+    @include myBox(yellow, black);
+  }
+  .card4 {
+    @include myBox(purple, white);
+  }
+}
+
+// ********* ARTICLES ********
+
+//! @extend
+.articles {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem;
+  .article1 {
+    background-color: grey;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 10rem;
+  }
+  .article2 {
+    @extend .article1;
+    background-color: hotpink;
+  }
+}
+
+// ********* FOOTER ********
+
+footer {
+  $dark: 1;
+  p {
+    @if $dark == 1 {
+      background-color: gray;
+    } @else if $dark == 2 {
+      background-color: lightgreen;
+    } @else {
+      background-color: lightsalmon;
+    }
+  }
+  .social-icons {
+    display: flex;
+    height: 10rem;
+    $textColor: #990000, #55004e, #0fa8a1, #121456, #c22b17;
+
+    @for $i from 1 through 5 {
+      .social#{$i} {
+        width: 20%;
+        height: 6rem;
+        background-color: lighten(rgb(107, 28, 254), $i * 5);
+        font-size: $i * 1rem;
+        color: nth($textColor, $i);
       }
     }
   }
