@@ -12,6 +12,7 @@ $fontColor: white;
 $navBgColor: #30a7c3;
 $fontFamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $bannerBgColor: hotpink;
+$myBorder: 2px solid brown;
 
 // **********************
 // * Variable Usage
@@ -25,3 +26,59 @@ body {
 }
 
 // ***** HEADER****
+header {
+  background-color: $navBgColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  img {
+    width: 100px;
+    border: $myBorder;
+    border-radius: 10px;
+  }
+  nav {
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+    padding: 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: $fontColor;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ****** BANNER ***********
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bannerBgColor;
+  padding: 1rem;
+  line-height: 2rem;
+  img {
+    width: 25%;
+    min-width: 250px;
+    max-width: 350px;
+  }
+  aside {
+    button {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      background-color: $navBgColor;
+      margin-top: 1rem;
+      margin-right: 0.7rem;
+      &:hover {
+        background-color: pink;
+        cursor: pointer;
+      }
+    }
+  }
+}
