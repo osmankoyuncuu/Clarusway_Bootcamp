@@ -1,0 +1,27 @@
+// ***** HEADER****
+@use "../abstracts/variables" as *;
+
+header {
+  background-color: $navBgColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  img {
+    width: 100px;
+    border: $myBorder;
+    border-radius: 10px;
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+    padding: 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: $fontColor;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

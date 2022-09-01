@@ -1,0 +1,20 @@
+// ********* ARTICLES ********
+
+//! @extend
+.articles {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem;
+  .article1 {
+    background-color: grey;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 10rem;
+  }
+  .article2 {
+    @extend .article1;
+    background-color: hotpink;
+  }
+}
