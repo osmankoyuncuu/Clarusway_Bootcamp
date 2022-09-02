@@ -12,6 +12,7 @@ main {
   display: flex;
   justify-content: center;
   margin: 2rem 5rem 2rem 14rem;
+  gap: 1rem;
 }
 main label {
   font-size: 0.9rem;
@@ -110,7 +111,75 @@ main input {
   width: 100%;
   flex-direction: column;
 }
-
 .card img {
   width: 150px;
+}
+.card-box {
+  background-color: #eeeeee;
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  height: 32rem;
+  gap: 2rem;
+  width: 45rem;
+}
+.card {
+  display: flex;
+}
+.card-info {
+  padding: 0.5rem 0 0 1rem;
+  color: #4e5150;
+}
+.card-info h2 {
+  margin-bottom: 0.5rem;
+}
+.card img {
+  border-radius: 15px;
+}
+.valid {
+  font-size: 1.4rem;
+  color: #f2994a;
+  font-weight: bold;
+}
+.invalid {
+  text-decoration: line-through;
+}
+.piece {
+  border: 2px solid gray;
+  border-radius: 7px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 9rem;
+  margin-top: 2rem;
+}
+.piece button {
+  width: 1.5rem;
+  height: 2rem;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.end-1 {
+  border-top: 2px solid #b7b7b7;
+  margin-top: 2rem;
+}
+.end-1 .p1 {
+  float: left;
+}
+.end-1 .p2 {
+  float: right;
+}
+.end-2 {
+  border-top: 2px solid #b7b7b7;
+  margin-top: -1rem;
+}
+.end-2 .p1 {
+  float: left;
+}
+.end-2 .p2 {
+  float: right;
 }
