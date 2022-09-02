@@ -12,6 +12,7 @@ main {
   display: flex;
   justify-content: center;
   margin: 1rem 10rem;
+  max-width: 1950px;
 }
 main label {
   font-size: 0.9rem;
