@@ -1,7 +1,6 @@
 const text = document.querySelector("#textArea");
 const buttonDom = document.querySelector("#button");
 const resetDom = document.querySelector("#reset");
-const resultDom = document.querySelector("#result");
 
 const vowel = ["a", "e", "ı", "i", "o", "ö", "u", "ü"];
 
@@ -15,6 +14,7 @@ buttonDom.addEventListener("click", (event) => {
   }
   if (text.value == 0) {
   } else {
+    const resultDom = document.querySelector("#result");
     const paragraf = document.createElement("p");
     resultDom.appendChild(paragraf);
     paragraf.innerHTML = `The are ${counter} vowel in <span>   ${text.value}</span>`;
