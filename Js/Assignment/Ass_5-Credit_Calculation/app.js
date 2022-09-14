@@ -6,10 +6,10 @@ const tabloDom = document.querySelector("#tablo");
 
 //  Kredi Tutarı * [Faiz * (1+Faiz)Taksit Sayısı / (1+Faiz)Taksit Sayısı-1] formülü ile hesaplanır.
 
-hesaplaDom.addEventListener("click", () => {
+hesaplaDom.addEventListener("click", (event) => {
+  event.preventDefault();
   let oran;
   if (krediDom.value === "Seçiniz") {
-    alert("Lütfen kredi türünü seçiniz.");
   } else if (krediDom.value === "Konut Kredisi") {
     oran = 1.29;
   } else if (krediDom.value === "İhtiyaç Kredisi") {
@@ -24,11 +24,13 @@ hesaplaDom.addEventListener("click", () => {
     (tutar * (faiz * (1 + faiz) ** vade)) / ((1 + faiz) ** vade - 1);
   let toplamTutar = taksitTutarı * vade;
 
-  if (
-    (vadeDom.value !== 0) &
-    (tutarDom.value !== 0) &
-    !(krediDom.value === "Seçiniz")
-  ) {
+  if (tutar === 0) {
+    alert("Lütfen kredi tutarını giriniz");
+  } else if (vade === 0) {
+    alert("Lütfen vade süresini giriniz");
+  } else if (!(krediDom.value === "Seçiniz")) {
+    alert("Lütfen kredi türünü seçiniz.");
+  } else {
     tabloDom.innerHTML = `
           <h1 class="text-warning">Kredi Bilgileri</h1> <tbody>
             <tr>

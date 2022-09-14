@@ -14,49 +14,47 @@
   </head>
   <body>
     <div class="container">
-      <form action="#">
-        <h1 class="text-warning">Kredi Hesaplama Aracı</h1>
-        <div class="col">
-          <label for="kredi">Kredi:</label>
-          <select
-            class="form-select w-100 box"
-            id="kredi"
-            aria-label="Default select example"
-          >
-            <option selected value="Seçiniz">Seçiniz</option>
-            <option value="Konut Kredisi">Konut Kredisi</option>
-            <option value="İhtiyaç Kredisi">İhtiyaç Kredisi</option>
-            <option value="Araç Kredisi">Araç Kredisi</option>
-          </select>
-        </div>
-        <div class="col">
-          <label for="vade">Vade:</label>
-          <input
-            type="number"
-            class="form-control w-100 box"
-            id="vade"
-            aria-label="Username"
-            aria-describedby="addon-wrapping"
-            required
-          />
-        </div>
-        <div class="col">
-          <label for="tutar">Tutar:</label>
-          <input
-            type="number"
-            class="form-control w-100 box"
-            id="tutar"
-            aria-label="Username"
-            aria-describedby="addon-wrapping"
-            required
-          />
-        </div>
-        <div class="col">
-          <button type="submit" class="btn btn-dark w-100" id="hesapla">
-            Hesapla
-          </button>
-        </div>
-      </form>
+      <h1 class="text-warning">Kredi Hesaplama Aracı</h1>
+      <div class="col">
+        <label for="kredi">Kredi:</label>
+        <select
+          class="form-select w-100 box"
+          id="kredi"
+          aria-label="Default select example"
+        >
+          <option selected value="Seçiniz">Seçiniz</option>
+          <option value="Konut Kredisi">Konut Kredisi</option>
+          <option value="İhtiyaç Kredisi">İhtiyaç Kredisi</option>
+          <option value="Araç Kredisi">Araç Kredisi</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="vade">Vade:</label>
+        <input
+          type="number"
+          class="form-control w-100 box"
+          id="vade"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+          required
+        />
+      </div>
+      <div class="col">
+        <label for="tutar">Tutar:</label>
+        <input
+          type="number"
+          class="form-control w-100 box"
+          id="tutar"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+          required
+        />
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-dark w-100" id="hesapla">
+          Hesapla
+        </button>
+      </div>
       <div class="col mt-5">
         <table
           class="table table-striped table-bordered border-dark table-hover"
