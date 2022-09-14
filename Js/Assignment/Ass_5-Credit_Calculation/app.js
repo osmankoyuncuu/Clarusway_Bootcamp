@@ -24,12 +24,12 @@ hesaplaDom.addEventListener("click", (event) => {
     (tutar * (faiz * (1 + faiz) ** vade)) / ((1 + faiz) ** vade - 1);
   let toplamTutar = taksitTutarı * vade;
 
-  if (tutar === 0) {
-    alert("Lütfen kredi tutarını giriniz");
+  if (krediDom.value === "Seçiniz") {
+    alert("Lütfen kredi türünü seçiniz.");
   } else if (vade === 0) {
     alert("Lütfen vade süresini giriniz");
-  } else if (!(krediDom.value === "Seçiniz")) {
-    alert("Lütfen kredi türünü seçiniz.");
+  } else if (tutar === 0) {
+    alert("Lütfen kredi tutarını giriniz");
   } else {
     tabloDom.innerHTML = `
           <h1 class="text-warning">Kredi Bilgileri</h1> <tbody>
