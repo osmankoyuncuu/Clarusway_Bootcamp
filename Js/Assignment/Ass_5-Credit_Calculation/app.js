@@ -54,3 +54,13 @@ hesaplaDom.addEventListener("click", (event) => {
           </tbody>`;
   }
 });
+vadeDom.addEventListener("keydown", (event) => {
+  if (event.keyCode == 13) {
+    hesaplaDom.click();
+  }
+});
+tutarDom.addEventListener("keydown", (event) => {
+  if (event.keyCode == 13) {
+    hesaplaDom.click();
+  }
+});
