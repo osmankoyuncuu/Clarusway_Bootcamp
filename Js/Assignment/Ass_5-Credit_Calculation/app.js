@@ -25,11 +25,9 @@ hesaplaDom.addEventListener("click", () => {
   let toplamTutar = taksitTutarı * vade;
 
   if (
-    !(
-      vadeDom.value === 0 ||
-      tutarDom.value === 0 ||
-      krediDom.value === "Seçiniz"
-    )
+    (vadeDom.value !== 0) &
+    (tutarDom.value !== 0) &
+    !(krediDom.value === "Seçiniz")
   ) {
     tabloDom.innerHTML = `
           <h1 class="text-warning">Kredi Bilgileri</h1> <tbody>
