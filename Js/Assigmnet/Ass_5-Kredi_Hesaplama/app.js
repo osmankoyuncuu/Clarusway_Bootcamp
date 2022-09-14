@@ -23,9 +23,16 @@ hesaplaDom.addEventListener("click", () => {
   let taksitTutarı =
     (tutar * (faiz * (1 + faiz) ** vade)) / ((1 + faiz) ** vade - 1);
   let toplamTutar = taksitTutarı * vade;
-  console.log(oran, toplamTutar, taksitTutarı);
 
-  tabloDom.innerHTML = `<tbody>
+  if (
+    !(
+      vadeDom.value === 0 ||
+      tutarDom.value === 0 ||
+      krediDom.value === "Seçiniz"
+    )
+  ) {
+    tabloDom.innerHTML = `
+          <h1 class="text-warning">Kredi Bilgileri</h1> <tbody>
             <tr>
               <th scope="row">Kredi Miktarı</th>
               <td>${tutar}</td>
@@ -45,4 +52,5 @@ hesaplaDom.addEventListener("click", () => {
               <td>${taksitTutarı.toFixed(2)} ₺</td>
             </tr>
           </tbody>`;
+  }
 });
